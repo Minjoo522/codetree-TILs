@@ -17,7 +17,7 @@ def get_gold_sum(r, c, K):
 def calculate_max_gold():
     max_gold_count = 0
 
-    for K in range(n):
+    for K in range(n + 1):
         cost = K * K + (K + 1) * (K + 1)
         for r in range(n):
             for c in range(n):

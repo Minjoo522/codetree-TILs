@@ -15,7 +15,8 @@ def get_gold_in_border(r, c, K):
         for step in range(K):
             if 0 <= curr_r < n and 0 <= curr_c < n:
                 gold_sum += board[curr_r][curr_c]
-                curr_r, curr_c = curr_r + dr, curr_c + dc
+            
+            curr_r, curr_c = curr_r + dr, curr_c + dc
     
     return gold_sum
 

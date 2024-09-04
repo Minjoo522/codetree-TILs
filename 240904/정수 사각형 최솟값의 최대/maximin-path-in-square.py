@@ -16,6 +16,6 @@ for c in range(1, n):
 
 for r in range(1, n):
     for c in range(1, n):
-        dp[r][c] = max(board[r - 1][c], board[r][c - 1])
+        dp[r][c] = min(max(dp[r - 1][c], dp[r][c - 1]), board[r][c])
 
 print(dp[n - 1][n - 1])

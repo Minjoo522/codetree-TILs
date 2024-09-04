@@ -16,7 +16,7 @@ for c in range(1, n):
 
 for r in range(1, n):
     for c in range(1, n):
-        dp[r][c] = max(dp[r][c - 1] + board[r][c], dp[r - 1][c] + dp[r][c])
+        dp[r][c] = max(dp[r][c - 1] + board[r][c], dp[r - 1][c] + board[r][c])
     
 result = 0
 for c in range(n):
